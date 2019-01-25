@@ -1,0 +1,45 @@
+.card {
+    &__left {
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 32rem;
+
+        &-img--wrapper {
+            height: 28rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 7rem;
+        }
+
+        &-img {
+            height: 100%;
+        }
+
+        &-tmbbox {
+            display: flex;
+            justify-content: space-between;
+            height: 7rem;
+
+        }
+
+        &-tmbwrapper {
+            height: 100%;
+            width: 9.5rem;
+            border: none;
+            background: $color-light;
+            outline: none;
+            cursor: pointer;
+
+            &:focus,
+            &:active {
+                background: $color-primary;
+                border: none;
+            }
+        }
+
+        &-tmb {
+            height: 50%;
+        }
+    }
+}

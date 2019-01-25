@@ -1,0 +1,15 @@
+.filters__heading{
+    color: $color-primary;
+    margin-bottom: 3rem;
+}
+.filters__listitem{
+    &:not(:last-of-type){
+       margin-bottom: 2rem;   
+    }
+    label{
+        cursor: pointer;
+    }
+   
+    
+
+}

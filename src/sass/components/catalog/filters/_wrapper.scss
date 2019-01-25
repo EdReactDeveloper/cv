@@ -1,0 +1,46 @@
+.catalog {
+    &__filters {
+        display: flex;
+        flex: 0 1 27rem;
+        flex-direction: column;
+        &-wrapper {           
+
+            box-sizing: border-box;   
+            @media only screen and (max-width: 900px){
+                position: absolute; 
+                display: none;
+                z-index: 15;
+                border: 1px solid #ccc;
+                box-shadow: 1px 0 4px rgba(0,0,0,.1);
+                
+            }        
+            
+        }
+
+        &-block {
+            width: 100%;
+            padding: 4rem;
+            background: #fff; 
+            margin-bottom: 3rem;
+            @media only screen and (max-width: 900px){
+              margin: 0;
+              border-bottom: 1px solid #ccc;
+            }  
+           
+        }
+    }
+}
+
+.display{
+    display: block;
+}
+.modal{
+  
+    position: fixed; 
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,.6);
+    z-index: 10; 
+}

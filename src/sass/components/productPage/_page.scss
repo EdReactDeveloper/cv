@@ -1,0 +1,135 @@
+@import '../../abstracts/variables'; 
+
+.card{
+    background: #fff;
+    &__wrapper{
+        display: flex;
+        
+        justify-content: space-between;
+        padding: 10.5rem 0; 
+    }
+
+    
+
+    &__right{
+        display: flex;
+        flex-direction: column; 
+        flex: 0 1 65%; 
+        &-heading{
+            font-size: 5.2rem;
+            color: $color-primary; 
+            font-weight: 900;
+           
+            text-transform: uppercase;
+        }
+        &-subheading{
+            margin-top: 3rem;
+            margin-bottom: 4rem;
+            font-size: 1.8rem;
+            font-weight: 400;
+        }
+        &-description{
+            font-size: 1.6rem;
+            font-weight: 400;
+        }
+
+        &-options{
+            &--wrapper{
+               margin: 4rem 0;
+               padding: 4rem 0;
+               border-top: 1px solid #ccc;
+               border-bottom: 1px solid #ccc;
+               display: flex; 
+               
+            }
+            &--left{
+                display: flex;
+                flex: 0 1 50%; 
+                border-right: 1px solid #ccc;
+                justify-content: flex-start;
+
+            }
+            &--right{
+                display: flex;
+                flex: 0 1 50%; 
+                justify-content: flex-end;
+            }
+            &--label{
+                margin-right: 2rem;
+            }
+            &--calc{
+                
+                background: none;
+                border: none; 
+                outline: none;
+                cursor: pointer;
+            }
+            &--number{
+                margin: 0 1.6rem;
+                color: $color-primary;
+                font-size: 1.8rem;
+                font-weight: 900; 
+            }
+            &--buttons{
+                display: flex;
+                
+
+            }
+            &--dash{
+                margin: 0 .5rem;
+            }
+            &--button{
+                background: none;
+                border: none; 
+                outline: none; 
+                cursor: pointer;
+                &-wrapper{
+                    &:last-child > span{
+                        display: none;
+                    }
+                }
+            }
+               
+        }
+
+        &-order{
+            &--wrapper{
+                display: flex;
+                align-items: center;
+                
+            }
+            &--price{
+                font-size: 2rem;
+                font-weight: 900;
+                margin-right: auto;
+
+            }
+            &--icon{
+                height: 2rem;
+                width: 2rem;  
+                margin-right: 3rem;  
+                cursor: pointer;
+                transition: all .5s; 
+                &:hover{
+                    & path{
+                        fill: $color-primary; 
+                    }
+                }            
+            }
+            &--button{
+                width: 13.5rem;
+                height: 5rem;
+                border: none; 
+                outline: none; 
+                border-radius: 100rem; 
+                background: $color-primary; 
+                cursor: pointer;
+                color: #fff;
+                font-size: 1.8rem;
+
+
+            }
+        }
+    }
+
+}
