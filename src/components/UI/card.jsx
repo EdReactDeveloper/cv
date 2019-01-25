@@ -1,13 +1,15 @@
 import React from "react";
-import Icon from "./Icon";
-import { Product } from "./Selection";
+import Icons from './iconbox';
 import {Link} from 'react-router-dom'; 
 
 const productCard = props => {
   const item = props.item;
+  const scrollup =()=>{
+    window.scrollTo(0,200)
+  }
   return (
     <li className="product-card"
-    onClick={props.clicked}
+    onClick={scrollup}
     >
       <Link to={`/products/${item.id}`}  className="product-card-front card-side">
         <img
@@ -45,11 +47,7 @@ const productCard = props => {
             <div className="product-card-back-price">
            ${item.price}
             </div>
-        <div className="product-card-back-buttons">
-          <Icon d={Product.internet} className="product-card-back-icon" />
-          <Icon d={Product.cart} className="product-card-back-icon" />
-          <Icon d={Product.heart} className="product-card-back-icon" />
-        </div>
+            <Icons className="product"/>
       </Link>
     </li>
   );

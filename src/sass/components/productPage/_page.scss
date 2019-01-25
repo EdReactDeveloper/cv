@@ -1,128 +1,185 @@
-@import '../../abstracts/variables'; 
+@import '../../abstracts/variables';
 
-.card{
-    background: #fff;
-    &__wrapper{
-        display: flex;
-        
-        justify-content: space-between;
-        padding: 10.5rem 0; 
+.productPage {
+    &__background {
+        background: #fff;
     }
 
-    
-
-    &__right{
+    &__wrapper {
         display: flex;
-        flex-direction: column; 
-        flex: 0 1 65%; 
-        &-heading{
-            font-size: 5.2rem;
-            color: $color-primary; 
-            font-weight: 900;
-           
-            text-transform: uppercase;
+        justify-content: space-between;
+        padding: 10.5rem 0;
+
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+
         }
-        &-subheading{
+
+        @media only screen and (max-width: 500px) {
+            padding: 2rem 0;
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 65%;
+
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &-heading {
+            font-size: 5.2rem;
+            color: $color-primary;
+            font-weight: 900;
+            text-transform: uppercase;
+            @media only screen and (max-width: 768px) {
+                font-size: 3rem;
+            }
+        }
+
+        &-subheading {
             margin-top: 3rem;
             margin-bottom: 4rem;
             font-size: 1.8rem;
             font-weight: 400;
+
+            @media only screen and (max-width: 768px) {
+                margin: 2rem 0;
+            }
         }
-        &-description{
+
+        &-description {
             font-size: 1.6rem;
             font-weight: 400;
         }
 
-        &-options{
-            &--wrapper{
-               margin: 4rem 0;
-               padding: 4rem 0;
-               border-top: 1px solid #ccc;
-               border-bottom: 1px solid #ccc;
-               display: flex; 
-               
-            }
-            &--left{
+        &-options {
+            &--wrapper {
+                margin: 4rem 0;
+                padding: 4rem 0;
+                border-top: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
                 display: flex;
-                flex: 0 1 50%; 
+
+                @media only screen and (max-width: 500px) {
+                    flex-direction: column;
+                    margin: 1rem;
+                    padding: 1rem;
+
+                    &>* {
+                        margin: 1rem auto;
+                    }
+                }
+
+            }
+
+            &--left {
+                display: flex;
+                flex: 0 1 50%;
                 border-right: 1px solid #ccc;
                 justify-content: flex-start;
 
+                @media only screen and (max-width: 500px) {
+                    border: 0;
+                }
+
             }
-            &--right{
+
+            &--right {
                 display: flex;
-                flex: 0 1 50%; 
+                flex: 0 1 50%;
                 justify-content: flex-end;
             }
-            &--label{
+
+            &--label {
                 margin-right: 2rem;
             }
-            &--calc{
-                
+
+            &--calc {
+
                 background: none;
-                border: none; 
+                border: none;
                 outline: none;
                 cursor: pointer;
             }
-            &--number{
+
+            &--number {
                 margin: 0 1.6rem;
                 color: $color-primary;
                 font-size: 1.8rem;
-                font-weight: 900; 
+                font-weight: 900;
             }
-            &--buttons{
+
+            &--buttons {
                 display: flex;
-                
+
 
             }
-            &--dash{
+
+            &--dash {
                 margin: 0 .5rem;
             }
-            &--button{
+
+            &--button {
                 background: none;
-                border: none; 
-                outline: none; 
+                border: none;
+                outline: none;
                 cursor: pointer;
-                &-wrapper{
-                    &:last-child > span{
+
+                &-wrapper {
+                    &:last-child>span {
                         display: none;
                     }
                 }
             }
-               
+
         }
 
-        &-order{
-            &--wrapper{
+        &-order {
+            &--wrapper {
                 display: flex;
                 align-items: center;
-                
+
+                @media only screen and (max-width: 500px) {
+                    flex-direction: column;
+                    height: 20rem;
+                    justify-content: space-between;
+
+                }
             }
-            &--price{
+
+            &--price {
                 font-size: 2rem;
                 font-weight: 900;
                 margin-right: auto;
 
             }
-            &--icon{
+
+            &--icon {
                 height: 2rem;
-                width: 2rem;  
-                margin-right: 3rem;  
+                width: 2rem;
+                margin-right: 3rem;
                 cursor: pointer;
-                transition: all .5s; 
-                &:hover{
-                    & path{
-                        fill: $color-primary; 
+                transition: all .5s;
+
+                &:hover {
+                    & path {
+                        fill: $color-primary;
                     }
-                }            
+                }
             }
-            &--button{
+
+            &--button {
                 width: 13.5rem;
                 height: 5rem;
-                border: none; 
-                outline: none; 
-                border-radius: 100rem; 
-                background: $color-primary; 
+                border: none;
+                outline: none;
+                border-radius: 100rem;
+                background: $color-primary;
                 cursor: pointer;
                 color: #fff;
                 font-size: 1.8rem;
@@ -132,4 +189,18 @@
         }
     }
 
+    &-iconbox{
+         width: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+
+    @media only screen and (max-width: 500px) {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    }
+
 }
+

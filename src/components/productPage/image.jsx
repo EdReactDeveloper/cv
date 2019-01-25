@@ -8,25 +8,25 @@ const image = (props) => {
         props.chooseImage(i)
     }
     return (
-        <div className="card__left">
-        <div className="card__left-img--wrapper">
+        <div className="productImage__left">
+        <div className="productImage__left-img--wrapper">
           <img
             src={image}
             alt="image is missing"
-            className="card__left-img"
+            className="productImage__left-img"
           />
         </div>
 
-        <div className="card__left-tmbbox">
+        <div className="productImage__left-tmbbox">
           {data.map((item, i) => (
             <button
-              className="card__left-tmbwrapper"
+              className="productImage__left-tmbwrapper"
               onClick={() => chooseImage(i)}
               key={i} >
               <img
                 src={item}
                 alt="image is missing"
-                className="card__left-tmb"
+                className="productImage__left-tmb"
               />
             </button>
           ))}

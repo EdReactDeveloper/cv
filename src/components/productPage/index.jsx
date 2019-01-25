@@ -1,21 +1,18 @@
 import React, { Component } from "react";
 import ProductPage from "./productPage";
-import {data} from '../data'; 
+import { data } from "../data";
 
 class ProductCard extends Component {
   state = {
-      isLoading: true, 
+    isLoading: true,
     card: [],
-    list: [
-      
-    ]
+    list: []
   };
 
-  componentDidMount(){
-    console.log('mount')
+  componentDidMount() {
     const id = this.props.match.params.id;
-    console.log(id)
-    const list = { ...data};
+
+    const list = { ...data };
     let card;
     for (let key in list) {
       if (list[key].id === Number(id)) {
@@ -24,18 +21,20 @@ class ProductCard extends Component {
     }
     this.setState({
       list: data,
-      card, isLoading: false
+      card,
+      isLoading: false
     });
-    console.log(this.state.card)
   }
-  
 
   render() {
-    console.log('render')
-      let loader = <div>loading</div>
+    let loader = <div>loading</div>;
     return (
       <div>
-        {!this.state.isLoading && this.state.card ? <ProductPage data={this.state.card} list={this.state.list}/> : loader}
+        {!this.state.isLoading && this.state.card ? (
+          <ProductPage data={this.state.card} list={this.state.list} />
+        ) : (
+          loader
+        )}
       </div>
     );
   }

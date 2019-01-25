@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Products from "./products";
+import Products from "../../../UI/productBlock";
 import Promos from "./promos"; 
 import Button from '../../../UI/extendButton';
 import Heading from '../../../UI/heading';
