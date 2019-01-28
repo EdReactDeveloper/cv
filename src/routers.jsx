@@ -3,6 +3,7 @@ import Layout from "./components/layout";
 import Main from "./components/main";
 import Catalog from "./components/catalog";
 import ProductPage from "./components/productPage";
+import Cart from './components/cart/cart'; 
 import { Route, Switch } from "react-router-dom";
 import { ProductProvider } from "./components/UI/context";
 class Routers extends Component {
@@ -11,6 +12,7 @@ class Routers extends Component {
       <ProductProvider>
         <Layout>
           <Switch>
+            <Route path="/cart" exact component={Cart}/>
             <Route path="/products" exact component={Catalog} />
             <Route path="/products/:id" exact component={ProductPage} />
             <Route path="/" exact component={Main} />
