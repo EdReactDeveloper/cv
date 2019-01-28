@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import Products from "../../../UI/productBlock";
 import Promos from "./promos"; 
 import Button from '../../../UI/extendButton';
 import Heading from '../../../UI/heading';
+import ProductList from '../../../UI/productBlock'; 
+
 class NewArrivals extends Component {
   render() {
     return (
@@ -15,7 +16,7 @@ class NewArrivals extends Component {
           />
           <div className="content__productbox">
             <div className="content__product-wrapper">
-              <Products />
+              <ProductList className='product-list' />
              <Button />
               <Promos />
             </div>

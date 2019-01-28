@@ -14,7 +14,6 @@ class Header extends Component {
   }
   
   render() {
-    console.log(this.state.open)
     return (
       <div className="header">
         <Contacts />

@@ -5,7 +5,7 @@ const payment = () => {
   return (
     <div className="payment">
       <h3 className="payment__heading">Payment Methods</h3>
-      <img src={cards} alt="image is missing" className="payment__image" />
+      <img src={cards} alt="is missing" className="payment__image" />
     </div>
   );
 };

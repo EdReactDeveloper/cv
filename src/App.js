@@ -7,9 +7,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <Router onUpdate={()=>window.scrollTo(0,0)}  history={createBrowserHistory()}>
-        <Routes />
-        </Router>
+          <Router onUpdate={()=>window.scrollTo(0,0)}  history={createBrowserHistory()}>
+            <Routes />
+          </Router>
       </div>
     );
   }

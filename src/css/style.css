@@ -304,6 +304,14 @@ body {
   transition: all .3s; }
   .iconbox-icon:hover path {
     fill: #ff5912; }
+  .iconbox-icon__incart {
+    width: 8rem;
+    height: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    color: #ff5912;
+    font-weight: 900; }
 
 .contacts {
   height: 100%;

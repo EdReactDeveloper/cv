@@ -1,35 +1,19 @@
 import React, { Component } from "react";
-import { data } from "../data";
 import Card from "./card";
-
+import { ProductConsumer } from "../UI/context";
 class Products extends Component {
-  state = {
-    isLoading: true,
-    products: []
-  };
-
-  componentDidMount() {
-    const products = data
-    this.setState({
-      products,
-      isLoading: false
-    });
-  }
   render() {
-    const loading = <div>loading</div>;
-    const list = [...this.state.products]
     return (
-      <div>
-        {!this.state.isLoading ? (
-          <ul className="product-list">
-            {list.splice(0,4).map((item, i) => (
-              <Card item={item} key={i} />
-            ))}
-          </ul>
-        ) : (
-          loading
-        )}
-      </div>
+      <ul className={this.props.className}>
+          <ProductConsumer>
+        {value => {
+          return value.products
+            .slice(0, 4)
+            .map((item, i) => <Card item={item} key={i} />);
+        }}
+      </ProductConsumer>
+      </ul>
+    
     );
   }
 }

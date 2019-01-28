@@ -12,7 +12,7 @@ const image = (props) => {
         <div className="productImage__left-img--wrapper">
           <img
             src={image}
-            alt="image is missing"
+            alt="is missing"
             className="productImage__left-img"
           />
         </div>
@@ -25,7 +25,7 @@ const image = (props) => {
               key={i} >
               <img
                 src={item}
-                alt="image is missing"
+                alt="is missing"
                 className="productImage__left-tmb"
               />
             </button>

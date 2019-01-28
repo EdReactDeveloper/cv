@@ -9,7 +9,7 @@ const salesCard = (props) => {
                 <Link to="/" className="sales__product-item-front">
                   <img
                     src={item.img}
-                    alt="image is missing"
+                    alt="is missing"
                     className="sales__product-item-img"
                   />
                   <div className="sales__product-item-line" />

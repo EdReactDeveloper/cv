@@ -9,5 +9,14 @@
                 fill: $color-primary;
             }
         }
+        &__incart{
+            width: 8rem;
+            height: 2rem;
+            text-transform: uppercase;
+            text-align: center;
+            display: inline-block;
+            color: $color-primary; 
+            font-weight: 900;
+        }
     }
 }

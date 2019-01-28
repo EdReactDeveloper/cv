@@ -14,11 +14,14 @@ export const data = [
         colors: ['red', 'blue', 'green', 'black'],
         quantity: 0,
         price: 120, 
-        category: 'Man'
+        category: 'Man', 
+        inCart: false, 
+        total: 0, 
+        count: 1
       },
       {
         id: 2,
-        images: [img1, img2, img3],
+        images: [img2, img1, img3],
         heading: "Full winter kit",
         subheading: "Half Jacket + Skiny Trousers + Boot leather",
         description:
@@ -27,11 +30,14 @@ export const data = [
         colors: ['red', 'blue', 'green', 'black'],
         quantity: 0,
         price: 120,
-        category: 'Woman'
+        category: 'Woman',
+        inCart: false, 
+        total: 0, 
+        count: 1
       },
       {
         id: 3,
-        images: [img1, img2, img3],
+        images: [img3, img1, img3],
         heading: "Full winter kit",
         subheading: "Half Jacket + Skiny Trousers + Boot leather",
         description:
@@ -40,7 +46,10 @@ export const data = [
         colors: ['red', 'blue', 'green', 'black'],
         quantity: 0,
         price: 120,
-        category: 'Man'
+        category: 'Man',
+        inCart: false, 
+        total: 0, 
+        count: 1
       },
       {
         id: 4,
@@ -53,11 +62,14 @@ export const data = [
         colors: ['red', 'blue', 'green', 'black'],
         quantity: 0,
         price: 120,
-        category: 'Children'
+        category: 'Children',
+        inCart: false, 
+        total: 0, 
+        count: 1
       },
       {
         id: 5,
-        images: [img1, img2, img3],
+        images: [img3, img2, img1],
         heading: "Full winter kit",
         subheading: "Half Jacket + Skiny Trousers + Boot leather",
         description:
@@ -66,11 +78,14 @@ export const data = [
         colors: ['red', 'blue', 'green', 'black'],
         quantity: 0,
         price: 120, 
-        category: 'Children'
+        category: 'Children',
+        inCart: false, 
+        total: 0, 
+        count: 1
       },
       {
         id: 6,
-        images: [img1, img2, img3],
+        images: [img3, img2, img1],
         heading: "Full winter kit",
         subheading: "Half Jacket + Skiny Trousers + Boot leather",
         description:
@@ -79,7 +94,10 @@ export const data = [
         colors: ['red', 'blue', 'green', 'black'],
         quantity: 0,
         price: 120, 
-        category: 'Children'
+        category: 'Children',
+        inCart: false, 
+        total: 0, 
+        count: 1
       },
       {
         id: 7,
@@ -92,6 +110,9 @@ export const data = [
         colors: ['red', 'blue', 'green', 'black'],
         quantity: 0,
         price: 120, 
-        category: 'Man'
+        category: 'Man',
+        inCart: false, 
+        total: 0, 
+        count: 1
       }
 ]

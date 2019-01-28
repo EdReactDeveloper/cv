@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Filters from "./filters";
 import Products from "./products";
-import { data } from "../data";
 import NewsLetter from "../UI/newsLetter";
+import MyContext from '../UI/context'; 
 class Catalog extends Component {
   state = {
     isLoading: true,
@@ -11,24 +11,24 @@ class Catalog extends Component {
     categryFilter: 'All'   
   };
 
+  static contextType = MyContext; 
+
   componentDidMount() {
+    console.log('componentDidMount - catalog context ', this.context.products)
     this.setState({
-      cards: [...data],     
-      filteredList: [...data],
+      cards: this.context.products,
+      filteredList: this.context.products,
       isLoading: false, 
       menuOpen: false
     });
   }
 
   filterCategory=(category)=>{
-      
       const list = this.state.cards.filter(item=>{
-        console.log(item.category, '==', category)
-        return item.category === category; 
+               return item.category === category; 
       })
-      console.log(list)
       this.setState({
-        filteredList: category === 'All' ? [...data] : list
+        filteredList: category === 'All' ? [...this.state.cards] : list
          
       })
   }
@@ -40,7 +40,7 @@ class Catalog extends Component {
   }
 
   render() {
-    console.log(this.state.menuOpen)
+    console.log('catalog index receives: ', this.context)
     const loading = <div>loading...</div>;
     return (
       <div className="catalog">
@@ -67,5 +67,6 @@ class Catalog extends Component {
     );
   }
 }
+
 
 export default Catalog;

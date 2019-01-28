@@ -3,6 +3,7 @@ import Icons from '../UI/iconbox';
 
 const productDescription = (props) => {
     const data = props.data; 
+    console.log('description: ',data)
     return (
         <div className="productPage__right">
               <h3 className="productPage__right-heading">{data.heading}</h3>
@@ -44,7 +45,7 @@ const productDescription = (props) => {
                 <div className="productPage__right-order--price">
                   Price: ${data.price}
                 </div>
-                <Icons className="productPage" />
+                <Icons className="productPage" id={data.id} inCart={data.inCart} />
                 <button className="productPage__right-order--button">Order Now</button>
               </div>
             </div>
