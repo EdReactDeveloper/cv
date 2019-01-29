@@ -22,7 +22,7 @@ export const data = [
       {
         id: 2,
         images: [img2, img1, img3],
-        heading: "Full winter kit",
+        heading: "Winter kit",
         subheading: "Half Jacket + Skiny Trousers + Boot leather",
         description:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry    Lorem Ipsum is simply dummy text of the printing and typesetting industry",
@@ -38,7 +38,7 @@ export const data = [
       {
         id: 3,
         images: [img3, img1, img3],
-        heading: "Full winter kit",
+        heading: "Full winter",
         subheading: "Half Jacket + Skiny Trousers + Boot leather",
         description:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry    Lorem Ipsum is simply dummy text of the printing and typesetting industry",
@@ -54,7 +54,7 @@ export const data = [
       {
         id: 4,
         images: [img1, img2, img3],
-        heading: "Full winter kit",
+        heading: "Full kit",
         subheading: "Half Jacket + Skiny Trousers + Boot leather",
         description:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry    Lorem Ipsum is simply dummy text of the printing and typesetting industry",
@@ -70,7 +70,7 @@ export const data = [
       {
         id: 5,
         images: [img3, img2, img1],
-        heading: "Full winter kit",
+        heading: "Full kit",
         subheading: "Half Jacket + Skiny Trousers + Boot leather",
         description:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry    Lorem Ipsum is simply dummy text of the printing and typesetting industry",
@@ -86,7 +86,7 @@ export const data = [
       {
         id: 6,
         images: [img3, img2, img1],
-        heading: "Full winter kit",
+        heading: "Full winter",
         subheading: "Half Jacket + Skiny Trousers + Boot leather",
         description:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry    Lorem Ipsum is simply dummy text of the printing and typesetting industry",
@@ -102,7 +102,7 @@ export const data = [
       {
         id: 7,
         images: [img1, img2, img3],
-        heading: "Full winter kit",
+        heading: "Wwinter kit",
         subheading: "Half Jacket + Skiny Trousers + Boot leather",
         description:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry    Lorem Ipsum is simply dummy text of the printing and typesetting industry",

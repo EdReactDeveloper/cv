@@ -1,18 +1,12 @@
 import React, { Component } from "react";
 import Logo from "./logo";
 import Navigation from './navigation'; 
-import Tools from './tools';
+import Tools from './tools/tools';
 import Contacts from './contacts'; 
+import NavigationMobile from './navigation-mobile';
 
 class Header extends Component {
-  state={
-    open: false
-  }
-
-  toggleMenu=()=>{
-    this.setState({open: !this.state.open})
-  }
-  
+    
   render() {
     return (
       <div className="header">
@@ -22,9 +16,8 @@ class Header extends Component {
             <div className="header__navigation-wrapper">
               <Logo />
               <Navigation />
-              <Tools toggleWindow={this.toggleMenu} 
-              open={this.state.open}
-              />
+              <NavigationMobile/>
+              <Tools/>
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Component} from "react";
 import {NavLink } from 'react-router-dom'; 
 
 const nav = [
@@ -9,9 +9,11 @@ const nav = [
   { title: "Contact", link: "/contact"}
 ];
 
-const navigation = () => {
-  return (
-    <ul className="navigation-list">
+class Navigation extends Component {
+  render(){
+
+    return (
+      <ul className="navigation-list">
       {nav.map((item, i) => (
         <li className="navigation-item" key={i}>
           <NavLink to={item.link} exact activeClassName="my-active" className="navigation-link">
@@ -21,6 +23,7 @@ const navigation = () => {
       ))}
     </ul>
   );
+}
 };
 
-export default navigation;
+export default Navigation;

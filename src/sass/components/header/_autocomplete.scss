@@ -1,0 +1,50 @@
+.autocomplete{
+    &__list{
+        position: absolute; 
+        width: 30rem;
+        height: auto;
+        top: 100%;
+        left: 0;
+        
+        background: #fff;
+        padding: 1rem;
+        visibility: hidden; 
+        opacity: 1;
+        box-shadow: 0 1px 3px rgba(0,0,0,.4);
+        @media only screen and (max-width: 450px){
+            width: 100%;
+            
+        }
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        height: 4rem;
+        width: 100%;
+        transition: all .2s; 
+        
+        &:hover{
+            background: #f8f8f8
+        }
+    }
+    &__imagebox{
+        height: 3rem;
+        width: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__img{
+        height: 100%;
+    }
+    &__heading{
+        font-size: 1.6rem;
+        margin-left: 2rem;
+        margin-right: auto;
+    }
+    &__price{
+        font-size: 1.4rem; 
+        color: $color-primary; 
+    }
+}
+

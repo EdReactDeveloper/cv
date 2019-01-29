@@ -1,13 +1,13 @@
 import React from "react";
 
-const heading = props => {
+const heading = ({span, content, main, style}) => {
   return (
-    <div>
-      <h2 className="heading">
-        <span> {props.span}</span> {props.main}
+    <React.Fragment>
+       <h2 className="heading" style={style}>
+        <span> {span}</span> {main}
       </h2>
-      <div className="heading__sub">{props.content}</div>
-    </div>
+      <div className="heading__sub">{content}</div>
+    </React.Fragment>
   );
 };
 

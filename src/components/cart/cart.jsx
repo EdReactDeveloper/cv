@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import { ProductConsumer } from "../UI/context";
+import OrderNow from '../UI/orderBtn'; 
+import Icon from '../UI/Icon'; 
+import {Product} from '../UI/Selection'; 
+import Heading from '../UI/heading'; 
 class Cart extends Component {
   render() {
     return (
@@ -9,7 +13,10 @@ class Cart extends Component {
             <ul className="cart__list">
               <ProductConsumer>
                 {value => {
-                  return value.cart.map((item, i) => (
+                  return( 
+                    value.cart < 1 ? <div className="cart__empty">
+                  <Heading span="your cart is" main="empty" style={{margin: 0}}/>
+                  </div> : value.cart.map((item, i) => (
                     <li className="cart__item" key={i}>
                     <div className="cart__item-imagebox"
                     >
@@ -29,10 +36,14 @@ class Cart extends Component {
                         onClick={()=>value.decrement(item.id)}
                         >-</button>
                       </div>
-                      <button className="cart__item-remove" onClick={()=>value.removeFromCart(item.id)}>remove</button>
+                      <OrderNow id={item.id} />
+                      
+                      <button className="cart__item-remove" onClick={()=>value.removeFromCart(item.id)}>
+                      <Icon d={Product.delete} className="cart__item-remove-icon"/>
+                      </button>
                     </li>
-                  ));
-                }}
+                  ))
+    )}}
               </ProductConsumer>
             </ul>
           </div>

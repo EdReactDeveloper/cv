@@ -1,5 +1,6 @@
 import React from 'react';
 import Icons from '../UI/iconbox'; 
+import OrderNow from '../UI/orderBtn'; 
 
 const productDescription = (props) => {
     const data = props.data; 
@@ -46,7 +47,7 @@ const productDescription = (props) => {
                   Price: ${data.price}
                 </div>
                 <Icons className="productPage" id={data.id} inCart={data.inCart} />
-                <button className="productPage__right-order--button">Order Now</button>
+                <OrderNow id={data.id}/>
               </div>
             </div>
     );

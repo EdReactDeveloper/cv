@@ -61,6 +61,7 @@
             padding: 1rem 2rem;
         }
         &-remove{
+
             background: #fff; 
             border: 1px solid #ccc; 
             outline: none; 
@@ -71,7 +72,25 @@
             &:hover{
                 background: #ccc;
             }
+            &-icon{
+                height: 2rem;
+                width: 2rem;
+                & path{
+                    
+                }
+            }
         }
     }
     
+    &__empty{
+        display: flex;
+        background: #fff;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem auto;
+        padding: 2rem; 
+        height: 15rem;
+        border: 1px solid #ccc;
+        
+    }
 }

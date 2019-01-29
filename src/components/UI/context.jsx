@@ -79,6 +79,10 @@ class ProductProvider extends Component {
     })
   }
 
+  orderNow=id=>{
+    
+  }
+
 
 
   render() {
@@ -94,7 +98,8 @@ class ProductProvider extends Component {
           cart: this.state.cart, 
           removeFromCart: this.removeFromCart,
           decrement: this.decrement,
-          increment: this.increment
+          increment: this.increment,
+          orderNow: this.orderNow
         }}
       >
         {this.props.children}
