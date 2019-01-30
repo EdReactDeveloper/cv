@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Product } from "../../../UI/Selection";
-import img1 from "../../../../img/sales_1.png";
+import img1 from "../../../../assets/images/sales_1.png";
 import Card from "./card";
 import NewsLetter from "../../../UI/newsLetter";
 import Heading from '../../../UI/heading'; 

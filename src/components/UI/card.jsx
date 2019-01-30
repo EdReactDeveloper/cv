@@ -15,24 +15,28 @@ class ProductCard extends Component {
           to={`/products/${item.id}`}
           className="product-card-front card-side"
         >
-          <img
+        <div className="product-card-front-imagewrapper">
+         <img
             src={item.images[0]}
             className="product-card-front-image"
             alt="is missing"
           />
+        </div>         
           <h3 className="product-card-front-heading">{item.heading}</h3>
           <div className="product-card-front-price">${item.price}</div>
         </Link>
-        ;
+        
         <Link
           to={`/products/${item.id}`}
           className="product-card-back card-side"
         >
+        <div className="product-card-back-imagewrapper">
           <img
-            src={item.images[0]}
-            className="product-card-back-image"
-            alt="is missing"
-          />
+              src={item.images[0]}
+              className="product-card-back-image"
+              alt="is missing"
+            />
+        </div>          
           <h3 className="product-card-back-heading">{item.heading}</h3>
           <ul className="product-card-back-size">
             size:

@@ -34,9 +34,31 @@
         }
         &-price{
             font-size: 2rem;
+            position: relative;
+            &:before{
+                content: "price:";
+                position: absolute;
+                top: -2rem;
+                left: 0;
+                text-align: center;
+                width: 100%;
+                font-size: 1.4rem; 
+                color: #666;
+            }
         }
         &-total{
-            font-size: 2rem; 
+            font-size: 2rem;
+            position: relative; 
+            &:before{
+                content: "total:";
+                position: absolute;
+                top: -2rem;
+                left: 0;
+                text-align: center;
+                width: 100%;
+                font-size: 1.4rem; 
+                color: #666;
+            }
 
         }
         &-countbox{

@@ -1,5 +1,5 @@
 import React from "react";
-import cards from "../../img/payment.png";
+import cards from "../../assets/payment.png";
 
 const payment = () => {
   return (

@@ -4,9 +4,9 @@ import {NavLink } from 'react-router-dom';
 const nav = [
   { title: "Home", link: "/" },
   { title: "Products", link: "/products",  },
-  { title: "Hot Deals", link: "/hot_deals" },
+  { title: "Hot Deals", link: "/deals" },
   { title: "About", link: "/about" },
-  { title: "Contact", link: "/contact"}
+  { title: "Contact", link: "/contacts"}
 ];
 
 class Navigation extends Component {

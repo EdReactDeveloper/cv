@@ -12,6 +12,7 @@
         width: 75%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 36rem;
         grid-gap: 1rem;
         margin-left: 1rem;
 
@@ -36,7 +37,7 @@
                 width: 3rem;
                 background: #fff;
                 
-                background: url('../img/filter.png');
+                background: url('../assets/filter.png');
                 background-size: contain; 
                 border: 1px solid #ccc;
             }

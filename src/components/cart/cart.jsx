@@ -24,17 +24,17 @@ class Cart extends Component {
                     </div>
                     
                       <h3 className="cart__item-heading">{item.heading}</h3>
-                      <div className="cart__item-price">{item.price}</div>
+                      <div className="cart__item-price">$ {item.price}</div>
                       <div className="cart__item-total">{item.total}</div>
                       <div className="cart__item-countbox">
-                        <button className="cart__item-increment"
-                        onClick={()=>value.increment(item.id)}
-                        >+</button>
-                        <div className="cart__item-count">{item.count}</div>
                         <button className="cart__item-increment"
                         disabled={item.count < 2}
                         onClick={()=>value.decrement(item.id)}
                         >-</button>
+                        <div className="cart__item-count">{item.count}</div>
+                        <button className="cart__item-increment"
+                        onClick={()=>value.increment(item.id)}
+                        >+</button>
                       </div>
                       <OrderNow id={item.id} />
                       
