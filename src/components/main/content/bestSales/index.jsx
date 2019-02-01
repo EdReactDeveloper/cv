@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Product } from "../../../UI/Selection";
+import { Product } from "../../../UI/icon/Selection";
 import img1 from "../../../../assets/images/sales_1.png";
 import Card from "./card";
 import NewsLetter from "../../../UI/newsLetter";

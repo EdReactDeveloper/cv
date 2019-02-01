@@ -77,9 +77,25 @@
 
             }
 
+            &--choosewrapper{
+                display: flex;
+                align-items: center;
+                &:first-child{
+                    margin-bottom: 2rem;
+                }
+            }
+
+            &--buttons{
+                width: 50%;
+                display: flex;
+                justify-content: space-between;
+            }
+
             &--left {
                 display: flex;
+                flex-direction: column;
                 flex: 0 1 50%;
+                
                 border-right: 1px solid #ccc;
                 justify-content: flex-start;
 
@@ -92,6 +108,7 @@
             &--right {
                 display: flex;
                 flex: 0 1 50%;
+                align-items: center;
                 justify-content: flex-end;
             }
 
@@ -105,6 +122,12 @@
                 border: none;
                 outline: none;
                 cursor: pointer;
+                padding: 1rem;
+                border: 1px solid #ccc;
+                transition: all .2s; 
+                &:hover{
+                    background: #ccc;
+                }
             }
 
             &--number {
@@ -114,29 +137,25 @@
                 font-weight: 900;
             }
 
-            &--buttons {
-                display: flex;
-
-
+            &--color{
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%; 
+                cursor: pointer; 
+                box-sizing: border-box;
             }
 
-            &--dash {
-                margin: 0 .5rem;
-            }
 
+           
             &--button {
                 background: none;
                 border: none;
                 outline: none;
+                padding: 1rem; 
+                border: 1px solid #ccc;
                 cursor: pointer;
-
-                &-wrapper {
-                    &:last-child>span {
-                        display: none;
-                    }
-                }
+                
             }
-
         }
 
         &-order {

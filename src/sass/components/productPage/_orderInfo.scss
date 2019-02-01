@@ -1,0 +1,34 @@
+.order {
+    &__info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        justify-items: center;
+        align-items: center;
+        div:nth-child(odd){
+            justify-self: flex-start;
+            font-size: 1.4rem;
+            color: #666;
+        }
+        div:nth-child(even){
+            font-weight: 700;
+        }
+
+
+    }
+
+    &__color {
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+    }
+
+
+    &__propbox {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}

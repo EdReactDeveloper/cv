@@ -1,6 +1,6 @@
 import React from "react";
-import Icon from "../UI/Icon";
-import { NavIcon } from "../UI/Selection";
+import Icon from "../UI/icon/Icon";
+import { NavIcon } from "../UI/icon/Selection";
 
 const banner = () => {
   return (

@@ -1,118 +1,143 @@
-.cart{
-    &__wrapper{
+@import '../../abstracts/variables';
+
+.cart {
+    &__wrapper {
         width: 100%;
     }
-    &__list{
 
-    }
-    &__item{
+    &__list {}
+
+    &__item {
         display: flex;
         background: #fff;
         justify-content: space-between;
         align-items: center;
         margin: 1rem auto;
-        padding: 2rem; 
+        padding: 2rem;
         height: 15rem;
         border: 1px solid #ccc;
-        &-imagebox{
+        @media only screen and (max-width: 900px){
+            flex-direction: column;
+            height: auto;
+        }
+        &-imagebox {
             height: 100%;
             width: 15rem;
             margin-right: 3rem;
-            background-size: contain; 
+            background-size: contain;
             display: flex;
             justify-content: center;
             align-items: center;
             overflow: hidden;
+            @media only screen and (max-width: 900px){
+                width: 10rem;
+                height: auto;
+            }
         }
-        &-image{
-            height: 100%;
+
+        &-image {
+            width: 100%;
 
         }
-        &-heading{
-            font-size: 2.5rem;
-            font-weight: 700;
-        }
-        &-price{
+
+        &-heading {
             font-size: 2rem;
+            font-weight: 700;
+            transition: all .2s;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+        
+        &-propswrapper{
+
+        }
+        &-total,
+        &-size,
+        &-price,
+        &-color {
+            font-size: 1.4rem;
             position: relative;
-            &:before{
-                content: "price:";
+            text-align: center;
+            border-right: 1rem;
+            &:before {
+
                 position: absolute;
-                top: -2rem;
-                left: 0;
+                top: 0;
+                left: -5rem;
                 text-align: center;
                 width: 100%;
-                font-size: 1.4rem; 
+                font-size: 1.4rem;
                 color: #666;
             }
         }
-        &-total{
-            font-size: 2rem;
-            position: relative; 
-            &:before{
-                content: "total:";
-                position: absolute;
-                top: -2rem;
-                left: 0;
-                text-align: center;
-                width: 100%;
-                font-size: 1.4rem; 
-                color: #666;
+
+        &-total {
+            &:before {
+                content: "total"
             }
 
+            color: $color-primary;
         }
-        &-countbox{
-            display: flex;
-        }
-        &-increment{
-            font-weight: 700;
-            background: #fff; 
-            border: 1px solid #ccc; 
-            outline: none; 
-            padding: 1rem 2rem;
-            cursor: pointer;
-            transition: all .1s;
-            &:hover{
-                background: #ccc;
+
+        &-size {
+            &:before {
+                content: "size"
             }
         }
-        &-count{
-            background: #fff; 
-            border: 1px solid #ccc; 
-            margin: 0 1rem;
-            padding: 1rem 2rem;
-        }
-        &-remove{
 
-            background: #fff; 
-            border: 1px solid #ccc; 
-            outline: none; 
+        &-price {
+            &:before {
+                content: "price"
+            }
+        }
+
+
+        &-color {
+            height: 2rem;
+            width: 2rem;
+            border-radius: 50%;
+
+            &:before {
+                content: "color"
+            }
+        }
+
+
+
+
+        &-remove {
+            background: #fff;
+            border: 1px solid #ccc;
+            outline: none;
             padding: 1rem 2rem;
             align-self: center;
             transition: all .1s;
             cursor: pointer;
-            &:hover{
+
+            &:hover {
                 background: #ccc;
             }
-            &-icon{
+
+            &-icon {
                 height: 2rem;
                 width: 2rem;
-                & path{
-                    
-                }
+
+                & path {}
             }
         }
     }
-    
-    &__empty{
+
+    &__empty {
         display: flex;
         background: #fff;
         justify-content: center;
         align-items: center;
         margin: 1rem auto;
-        padding: 2rem; 
+        padding: 2rem;
         height: 15rem;
         border: 1px solid #ccc;
-        
+
     }
 }

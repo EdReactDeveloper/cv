@@ -1,9 +1,8 @@
 import React from "react";
-import Icon from "../UI/Icon";
-import { Product } from "../UI/Selection";
-import { ProductConsumer } from "../UI/context";
+import Icon from "./Icon";
+import { Product } from "./Selection";
+import { ProductConsumer } from "../../../container/context";
 const iconbox = (props) => {
-  console.log('iconbox props: ', props.inCart)
   return (
     <ProductConsumer>
       {value => {

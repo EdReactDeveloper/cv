@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Promos from "./promos"; 
 import Button from '../../../UI/extendButton';
 import Heading from '../../../UI/heading';
-import ProductList from '../../../UI/productBlock'; 
+import ProductList from '../../../UI/product/productBlock'; 
 
 class NewArrivals extends Component {
   render() {

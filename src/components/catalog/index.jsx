@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Filters from "./filters";
 import Products from "./products";
 import NewsLetter from "../UI/newsLetter";
-import MyContext from '../UI/context'; 
+import MyContext from '../../container/context'; 
 class Catalog extends Component {
   state = {
     isLoading: true,
@@ -14,7 +14,6 @@ class Catalog extends Component {
   static contextType = MyContext; 
 
   componentDidMount() {
-    console.log('componentDidMount - catalog context ', this.context.products)
     this.setState({
       cards: this.context.products,
       filteredList: this.context.products,
@@ -40,7 +39,6 @@ class Catalog extends Component {
   }
 
   render() {
-    console.log('catalog index receives: ', this.context)
     const loading = <div>loading...</div>;
     return (
       <div className="catalog">

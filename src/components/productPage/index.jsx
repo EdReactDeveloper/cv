@@ -1,51 +1,30 @@
 import React, { Component } from "react";
-import Related from "../UI/productBlock";
+import Related from "../UI/product/productBlock";
 import NewsLetter from "../UI/newsLetter";
 import Heading from "../UI/heading";
-import Product from "./product";
-import MyContext from "../UI/context";
+import Product from "./cardBlock/index";
+import MyContext from "../../container/context";
+import Order from "../UI/order";
 class Index extends Component {
-  state = {
-    card: null,
-    id: null
-  };
-
   static contextType = MyContext;
 
   componentWillMount() {
-    const id = this.props.match.params.id
-   
-    this.setState({
-      id
-    })
-    this.getCard(id);
+    const id = this.props.match.params.id;
+    this.context.getItem(id);
   }
 
-
-  componentDidUpdate(nextProps){
-    const id = this.props.match.params.id
-    if(nextProps.match.params.id !== this.props.match.params.id){
-      this.getCard(id);
-    }  
-  }
-
-  getCard = (id) => {
-    const list = { ...this.context.products };
-    let card;
-    for (let key in list) {
-      if (list[key].id === Number(id)) {
-        card = list[key];
-        this.setState({
-          card
-        });
-      }
+  componentDidUpdate(nextProps) {
+    const id = this.props.match.params.id;
+    if (nextProps.match.params.id !== this.props.match.params.id) {
+      this.context.getItem(id);
     }
-  };
+  }
 
   render() {
     return (
       <div className="productPaged">
-        <Product item={this.state.card} />
+        <Order />
+        {this.context.card ? <Product item={this.context.card} /> : null}
         <div className="related">
           <div className="container">
             <Heading main="products" span="related" />

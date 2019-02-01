@@ -1,6 +1,6 @@
 import React from 'react';
-import Icon from "../../../UI/Icon";
-import { Product } from "../../../UI/Selection"
+import Icon from "../../../UI/icon/Icon";
+import { Product } from "../../../UI/icon/Selection";
 import {Link} from 'react-router-dom'; 
 const salesCard = (props) => {
     const item = props.item

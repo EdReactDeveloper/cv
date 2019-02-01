@@ -1,14 +1,22 @@
 import React, { Component } from "react";
-import { ProductConsumer } from "../UI/context";
-import OrderNow from '../UI/orderBtn'; 
-import Icon from '../UI/Icon'; 
-import {Product} from '../UI/Selection'; 
+import MyContext, { ProductConsumer } from "../../container/context";
+import {Link} from 'react-router-dom'; 
+import OrderNow from '../UI/order/orderBtn'; 
+import Icon from '../UI/icon/Icon'; 
+import {Product} from '../UI/icon/Selection'; 
 import Heading from '../UI/heading'; 
+import Order from '../UI/order';
+import Counter from '../UI/product/counter';
+import Info from '../UI/order/orderInfo';
+
 class Cart extends Component {
+
+  static contextType = MyContext; 
   render() {
     return (
       <div className="cart">
         <div className="container">
+        <Order item={this.context.order}/>
           <div className="cart__wrapper">
             <ul className="cart__list">
               <ProductConsumer>
@@ -23,21 +31,11 @@ class Cart extends Component {
                     <img src={item.images[0]} alt="is missing" className="cart__item-image"/>
                     </div>
                     
-                      <h3 className="cart__item-heading">{item.heading}</h3>
-                      <div className="cart__item-price">$ {item.price}</div>
-                      <div className="cart__item-total">{item.total}</div>
-                      <div className="cart__item-countbox">
-                        <button className="cart__item-increment"
-                        disabled={item.count < 2}
-                        onClick={()=>value.decrement(item.id)}
-                        >-</button>
-                        <div className="cart__item-count">{item.count}</div>
-                        <button className="cart__item-increment"
-                        onClick={()=>value.increment(item.id)}
-                        >+</button>
-                      </div>
-                      <OrderNow id={item.id} />
+                      <h3 className="cart__item-heading"><Link to={`/products/${item.id}`}>{item.heading}</Link></h3>
+                      <Info item={item}/>
                       
+                        <Counter id={item.id} />
+                      <OrderNow id={item.id} />                      
                       <button className="cart__item-remove" onClick={()=>value.removeFromCart(item.id)}>
                       <Icon d={Product.delete} className="cart__item-remove-icon"/>
                       </button>

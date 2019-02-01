@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../UI/card";
+import Card from "../UI/product/card";
 import Button from "../UI/extendButton";
 const products = props => {
   return (

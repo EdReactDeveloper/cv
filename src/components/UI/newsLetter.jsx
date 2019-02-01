@@ -1,6 +1,6 @@
 import React from "react";
-import Icon from "./Icon";
-import { Contact } from "./Selection";
+import Icon from "../UI/icon/Icon";
+import { Contact } from "../UI/icon/Selection";
 
 const newsLetter = () => {
   return (

@@ -1,0 +1,23 @@
+.counter{
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-items: flex-end;
+
+
+    }
+    &__button{
+        padding: 1rem; 
+        border: 1px solid #ccc;
+        background: #fff; 
+        cursor: pointer;
+        &:hover{
+            background: #f8f8f8;
+        }
+    }
+    &__display{
+        padding: 2rem; 
+        color: $color-primary; 
+        font-weight: 700; 
+    }
+}

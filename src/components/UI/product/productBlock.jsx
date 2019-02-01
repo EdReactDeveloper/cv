@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Card from "./card";
-import { ProductConsumer } from "../UI/context";
+import { ProductConsumer } from "../../../container/context";
 class Products extends Component {
   render() {
     return (

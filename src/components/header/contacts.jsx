@@ -1,6 +1,6 @@
 import React from 'react';
-import Icon from "../UI/Icon";
-import { Contact } from "../UI/Selection";
+import Icon from "../UI/icon/Icon";
+import { Contact } from "../UI/icon/Selection";
 const contacts = () => {
     return (
         <div className="contacts">

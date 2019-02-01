@@ -1,8 +1,8 @@
 import React from "react";
-import Icon from "../../UI/Icon";
+import Icon from "../../UI/icon/Icon";
 import { Link } from "react-router-dom";
-import { NavIcon } from "../../UI/Selection";
-import { ProductConsumer } from "../../UI/context";
+import { NavIcon } from "../../UI/icon/Selection";
+import { ProductConsumer } from "../../../container/context";
 const iconbox = ({searchOpen}) => {
   return (
     <div className="tools__iconbox">

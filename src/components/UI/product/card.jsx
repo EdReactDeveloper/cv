@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Icons from "./iconbox";
+import Icons from "../icon/iconbox";
 import { Link } from "react-router-dom";
 
 class ProductCard extends Component {
@@ -41,17 +41,19 @@ class ProductCard extends Component {
           <ul className="product-card-back-size">
             size:
             {item.sizes.map((item, i) => (
-              <div className="product-card-back-size-wrapper" key={i}>
-                <label className="product-card-back-size-label">{item}</label>
+              <div 
+              style={{color: item.active ? 'orange' : ''}}
+              className="product-card-back-size-wrapper" key={i}>
+                <label className="product-card-back-size-label">{item.name}</label>
                 <span>-</span>
               </div>
             ))}
           </ul>
           <div className="product-card-back-colorswrapper">
-            {item.colors.map((color, k) => (
+            {item.colors.map((item, k) => (
               <div
-                className="product-card-back-color"
-                style={{ background: color }}
+                className="product-card-back-color"                
+                style={{ background: item.name }}
                 key={k}
               />
             ))}

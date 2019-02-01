@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import Layout from "./components/layout";
 import Main from "./components/main";
 import Catalog from "./components/catalog";
-import NotReady from "./components/notready"; 
+import NotReady from "./components/UI/misc/notready"; 
 import ProductPage from "./components/productPage";
-import NotFound from "./components/notfound"; 
-import Cart from './components/cart/cart'; 
+import NotFound from "./components/UI/misc/notfound"; 
+import Cart from './components/cart'; 
 import { Route, Switch } from "react-router-dom";
-import { ProductProvider } from "./components/UI/context";
+import { ProductProvider } from "./container/context";
 class Routers extends Component {
   render() {
     return (

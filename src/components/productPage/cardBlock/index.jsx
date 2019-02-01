@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Image from "./image";
 import Descripiton from "./description";
-import MyContext from "../UI/context";
+import MyContext, {ProductConsumer} from "../../../container/context";
 
 class Product extends Component {
   state = {
@@ -11,7 +11,8 @@ class Product extends Component {
   };
   static contextType = MyContext;
 
-  componentDidMount() {
+  componentWillMount() {
+    console.log('product index - componentWillMount')
     this.setState({
       card: this.props.item,
       isLoading: false,
@@ -19,6 +20,7 @@ class Product extends Component {
     });
   }
   componentDidUpdate(nextProps){
+    console.log('product index - componentDidUpdate')
     if(this.props.item !== nextProps.item){
       this.setState({
         card: this.props.item,
@@ -33,6 +35,10 @@ class Product extends Component {
       image: this.props.item.images[i]
     });
   };
+
+  choooseHandler=(id, item, type)=>{
+    this.context.choooseHandler(id, item, type)
+  }
   render() {
     const item = this.state.card;
     return (
@@ -47,7 +53,16 @@ class Product extends Component {
                 image={this.state.image}
                 chooseImage={this.chooseImage}
               />
-              <Descripiton data={item} />
+              <ProductConsumer>
+                {value =>{
+                  return value.card ? <Descripiton 
+                  data={value.card}                  
+                  choooseHandler={this.choooseHandler}
+                 
+                  /> : null
+                }}
+              </ProductConsumer>
+              
             </div>
           )}
         </div>

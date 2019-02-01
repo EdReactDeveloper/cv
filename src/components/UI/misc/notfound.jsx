@@ -1,5 +1,5 @@
 import React from 'react';
-import Heading from '../components/UI/heading'; 
+import Heading from '../heading'; 
 
 const notFound = () => {
     return (
