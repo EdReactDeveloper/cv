@@ -12,7 +12,6 @@ class Product extends Component {
   static contextType = MyContext;
 
   componentWillMount() {
-    console.log('product index - componentWillMount')
     this.setState({
       card: this.props.item,
       isLoading: false,
@@ -20,7 +19,6 @@ class Product extends Component {
     });
   }
   componentDidUpdate(nextProps){
-    console.log('product index - componentDidUpdate')
     if(this.props.item !== nextProps.item){
       this.setState({
         card: this.props.item,
