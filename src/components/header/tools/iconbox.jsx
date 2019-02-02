@@ -23,7 +23,9 @@ const iconbox = ({searchOpen}) => {
           <ProductConsumer>
             {value => {
               return (
-                <span className={`tools__note ${value.cart.length > 0 ? 'display' : ''}`}>{value.cart.length}</span>
+                <span className='tools__note'
+                 style={{display: value.cart.length > 0 ? 'block' : 'none'}}
+                >{value.cart.length}</span>
               );
             }}
           </ProductConsumer>

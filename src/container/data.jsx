@@ -12,10 +12,10 @@ export const data = [
   {
     id: 1,
     images: [img5, img2, img4],
-    heading: "Full winter kit Full winter kit Full winter kit",
-    subheading: "Half Jacket + Skiny Trousers + Boot leather",
+    heading: "Outstanding summer dress",
+    subheading: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry    Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     sizes: [
       { name: "S", active: true },
       { name: "M", active: false },
@@ -40,7 +40,7 @@ export const data = [
   {
     id: 2,
     images: [img6, img1, img4],
-    heading: "Winter kit",
+    heading: "Simple summer suit",
     subheading: "Half Jacket + Skiny Trousers + Boot leather",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry    Lorem Ipsum is simply dummy text of the printing and typesetting industry",
@@ -68,7 +68,7 @@ export const data = [
   {
     id: 3,
     images: [img7, img2, img5],
-    heading: "Full winter",
+    heading: "Full winter coat",
     subheading: "Half Jacket + Skiny Trousers + Boot leather",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry    Lorem Ipsum is simply dummy text of the printing and typesetting industry",
@@ -96,8 +96,8 @@ export const data = [
   {
     id: 4,
     images: [img8, img6, img3],
-    heading: "Full kit",
-    subheading: "Half Jacket + Skiny Trousers + Boot leather",
+    heading: "Outstanding summer dress",
+    subheading: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry    Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     sizes: [
@@ -124,8 +124,8 @@ export const data = [
   {
     id: 5,
     images: [img9, img9, img1],
-    heading: "Full kit",
-    subheading: "Half Jacket + Skiny Trousers + Boot leather",
+    heading: "Demi season clothes",
+    subheading: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry    Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     sizes: [
@@ -153,7 +153,7 @@ export const data = [
     id: 6,
     images: [img8, img3, img1],
     heading: "Full winter",
-    subheading: "Half Jacket + Skiny Trousers + Boot leather",
+    subheading: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry    Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     sizes: [
@@ -180,8 +180,8 @@ export const data = [
   {
     id: 7,
     images: [img9, img4, img2],
-    heading: "Wwinter kit",
-    subheading: "Half Jacket + Skiny Trousers + Boot leather",
+    heading: "Women's Medallion Print Midi Dress ",
+    subheading: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry    Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     sizes: [
@@ -208,8 +208,8 @@ export const data = [
   {
     id: 7,
     images: [img6, img2, img7],
-    heading: "Wwinter kit",
-    subheading: "Half Jacket + Skiny Trousers + Boot leather",
+    heading: "Women's Medallion Print Midi Dress ",
+    subheading: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry    Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     sizes: [
@@ -228,7 +228,7 @@ export const data = [
     selectedColor: '',
     quantity: 0,
     price: 90,
-    category: "Men",
+    category: "Women",
     inCart: false,
     total: 0,
     count: 1
@@ -236,8 +236,8 @@ export const data = [
   {
     id: 7,
     images: [img5, img2, img6],
-    heading: "Wwinter kit",
-    subheading: "Half Jacket + Skiny Trousers + Boot leather",
+    heading: "Women's Dress ",
+    subheading: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry    Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     sizes: [
@@ -256,7 +256,7 @@ export const data = [
     selectedColor: '',
     quantity: 0,
     price: 180,
-    category: "Men",
+    category: "Women",
     inCart: false,
     total: 0,
     count: 1

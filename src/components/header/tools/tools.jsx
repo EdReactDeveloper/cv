@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import MyContext from "../../../container/context";
 import Icons from './iconbox';
 import Autocomplete from "../autocomplete";
-
-// import Search from './search'; 
+ 
 class Tools extends Component {
   state = {
     showInput: false,
@@ -48,7 +47,7 @@ class Tools extends Component {
     });
     return (
       <div className="tools">
-       <div className={`search__module ${this.state.showInput ? 'display': null}`} 
+       <div className='search__module' style={{display: this.state.showInput ? 'block': 'none'}}  
        onClick={()=>this.searchOpen()}>
     </div>
 
@@ -69,14 +68,7 @@ class Tools extends Component {
       />
       <Autocomplete list={list} />
     </form>
-        {/* <Search 
-        showInput={this.state.showInput}
-        list={list}
-        node={this.node}
-        inputvalue={this.state.inputvalue}
-        inputHandler={this.inputHandler}
-        searchOpen={this.searchOpen}
-        /> */}
+        
         <Icons
         searchOpen={this.searchOpen}
         />

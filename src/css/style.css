@@ -4,6 +4,9 @@
 .hidden {
   visibility: hidden; }
 
+.display {
+  display: block; }
+
 html {
   font-size: 62.5%; }
 
@@ -35,6 +38,9 @@ body {
 .hidden {
   visibility: hidden; }
 
+.display {
+  display: block; }
+
 .wrapper {
   border: 1px solid #ccc;
   background: #f4f6f8; }
@@ -54,6 +60,9 @@ body {
 
 .hidden {
   visibility: hidden; }
+
+.display {
+  display: block; }
 
 .extendbutton {
   background: #fff;
@@ -97,9 +106,6 @@ body {
     @media only screen and (max-width: 450px) {
       .heading__sub {
         margin-bottom: 2rem; } }
-
-.display {
-  display: block; }
 
 .modal {
   position: fixed;
@@ -216,7 +222,8 @@ body {
   left: 0;
   width: 100%;
   transition: all .8s ease;
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+  padding: 2rem 4rem; }
   @media only screen and (max-width: 900px) {
     .card-side {
       position: relative; } }
@@ -233,9 +240,9 @@ body {
     transform: rotateY(-180deg); }
   .card:hover .card-back {
     transform: rotateY(0); }
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: 500px) {
     .card {
-      height: 30rem; } }
+      height: 25rem; } }
 
 .card-back {
   display: grid;
@@ -243,7 +250,6 @@ body {
   grid-template-columns: 100%;
   justify-items: center;
   align-items: center;
-  padding: 2rem;
   transform: rotateY(180deg);
   background: #fff;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1); }
@@ -321,7 +327,6 @@ body {
       display: none; } }
 
 .card-front {
-  padding: 4rem 2rem;
   background: #fff;
   display: grid;
   grid-auto-rows: 70% 20% 10%;
@@ -445,6 +450,9 @@ body {
 
 .hidden {
   visibility: hidden; }
+
+.display {
+  display: block; }
 
 .contacts {
   height: 100%;
@@ -572,7 +580,6 @@ body {
     font-size: 1rem;
     top: -1rem;
     left: .5rem;
-    display: none;
     text-align: center; }
   .tools-icon {
     width: 2rem;
@@ -798,6 +805,9 @@ body {
 .hidden {
   visibility: hidden; }
 
+.display {
+  display: block; }
+
 .promos__icon-wrapper {
   position: relative;
   width: 10rem;
@@ -927,6 +937,9 @@ body {
 
 .hidden {
   visibility: hidden; }
+
+.display {
+  display: block; }
 
 .sales__wrapper {
   display: flex;
@@ -1172,6 +1185,9 @@ body {
 .hidden {
   visibility: hidden; }
 
+.display {
+  display: block; }
+
 .payment {
   display: flex;
   flex-direction: column;
@@ -1217,6 +1233,9 @@ body {
 
 .hidden {
   visibility: hidden; }
+
+.display {
+  display: block; }
 
 .categories__heading {
   color: #ff5912;
@@ -1267,8 +1286,6 @@ body {
       .catalog__filters-block {
         margin: 0;
         border-bottom: 1px solid #ccc; } }
-  .catalog__filters__checkbox {
-    margin-right: 1rem; }
 
 .filters__heading {
   color: #ff5912;
@@ -1279,6 +1296,9 @@ body {
 
 .filters__listitem label {
   cursor: pointer; }
+
+.filters__checkbox {
+  margin-right: 1rem; }
 
 .catalog {
   margin-top: 12rem; }
@@ -1324,6 +1344,9 @@ body {
 .hidden {
   visibility: hidden; }
 
+.display {
+  display: block; }
+
 .productPage__background {
   background: #fff; }
 
@@ -1348,7 +1371,8 @@ body {
       width: 90%;
       margin: 0 auto; } }
   .productPage__right-heading {
-    font-size: 5.2rem;
+    font-size: 3rem;
+    line-height: 4rem;
     color: #ff5912;
     font-weight: 900;
     text-transform: uppercase; }
@@ -1587,6 +1611,9 @@ body {
 
 .hidden {
   visibility: hidden; }
+
+.display {
+  display: block; }
 
 .cart__wrapper {
   width: 100%; }
