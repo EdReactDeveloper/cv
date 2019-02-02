@@ -12,7 +12,7 @@
         width: 75%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 36rem;
+        grid-auto-rows: max-content;
         grid-gap: 1rem;
         margin-left: 1rem;
 
@@ -24,6 +24,10 @@
         @media only screen and (max-width: 640px) {
             grid-template-columns: 1fr 1fr;
         }
+        @media only screen and (max-width: 450px) {
+            grid-gap: .2rem;
+        }
+  
   
     }
 

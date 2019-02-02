@@ -1,19 +1,19 @@
 import React from "react";
 
-const brands = props => {
-  const list = props.brands;
+const checkboxes = ({title, list}) => {
+  
   return (
     <div className="brands__wrapper">
-      <h3 className="filters__heading">Brands</h3>
+      <h3 className="filters__heading">{title}</h3>
       <ul className="brands__list">
         {list.map((item, i) => (
           <li className="filters__listitem" key={i}>
             <input
               type="checkbox"
-              id={item.brand}
-              className="size__checkbox"
+              id={item.name}
+              className="filters__checkbox"
             />
-            <label htmlFor={item.brand}>{item.brand}</label>
+            <label htmlFor={item.name}>{item.name}</label>
           </li>
         ))}
       </ul>
@@ -21,4 +21,4 @@ const brands = props => {
   );
 };
 
-export default brands;
+export default checkboxes;

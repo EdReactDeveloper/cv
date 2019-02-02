@@ -12,7 +12,7 @@ export const data = [
   {
     id: 1,
     images: [img5, img2, img4],
-    heading: "Full winter kit",
+    heading: "Full winter kit Full winter kit Full winter kit",
     subheading: "Half Jacket + Skiny Trousers + Boot leather",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry    Lorem Ipsum is simply dummy text of the printing and typesetting industry",
@@ -32,7 +32,7 @@ export const data = [
     selectedColor: '',
     quantity: 0,
     price: 130,
-    category: "Man",
+    category: "Men",
     inCart: false,
     total: 0,
     count: 1
@@ -60,7 +60,7 @@ export const data = [
     selectedColor: '',
     quantity: 0,
     price: 220,
-    category: "Woman",
+    category: "Women",
     inCart: false,
     total: 0,
     count: 1
@@ -88,7 +88,7 @@ export const data = [
     selectedColor:'',
     quantity: 0,
     price: 140,
-    category: "Man",
+    category: "Men",
     inCart: false,
     total: 0,
     count: 1
@@ -200,7 +200,7 @@ export const data = [
     selectedColor: '',
     quantity: 0,
     price: 100,
-    category: "Woman",
+    category: "Women",
     inCart: false,
     total: 0,
     count: 1
@@ -228,7 +228,7 @@ export const data = [
     selectedColor: '',
     quantity: 0,
     price: 90,
-    category: "Man",
+    category: "Men",
     inCart: false,
     total: 0,
     count: 1
@@ -256,7 +256,7 @@ export const data = [
     selectedColor: '',
     quantity: 0,
     price: 180,
-    category: "Man",
+    category: "Men",
     inCart: false,
     total: 0,
     count: 1

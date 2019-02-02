@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import Brands from "./brands";
-import Size from "./size";
+import Checkboxes from "./checkboxes";
 import Price from "./price";
 import Categories from "./categories";
 
@@ -8,25 +7,26 @@ class Filters extends Component {
   state = {
     categories: [
       { title: "All", active: "yes" },
-      { title: "Man", active: "no" },
-      { title: "Woman", active: "no" },
+      { title: "Men", active: "no" },
+      { title: "Women", active: "no" },
       { title: "Children", active: "no" },
       { title: "Hot Deals", active: "no" }
     ],
     pricefilter: { from: 100, to: 1000 },
-    size: [
-      { size: "Small", active: "no" },
-      { size: "Medium", active: "no" },
-      { size: "Large", active: "no" },
-      { size: "X Large", active: "no" }
+    sizes: [
+      { name: "Small", active: "no" },
+      { name: "Medium", active: "no" },
+      { name: "Large", active: "no" },
+      { name: "X Large", active: "no" }
     ],
     brands: [
-      { brand: "Reebok", active: "no" },
-      { brand: "Adidas", active: "no" },
-      { brand: "Nike", active: "no" },
-      { brand: "Active", active: "no" }
+      { name: "Reebok", active: "no" },
+      { name: "Adidas", active: "no" },
+      { name: "Nike", active: "no" },
+      { name: "Active", active: "no" }
     ]
   };
+
   filterCategory = category => {
     this.props.filterCategory(category);
 
@@ -46,9 +46,11 @@ class Filters extends Component {
 
   render() {
     return (
-      <div className={`catalog__filters-wrapper 
-        ${this.props.open ? 'display' : ''}
-      `}>
+      <div
+        className={`catalog__filters-wrapper 
+        ${this.props.open ? "display" : ""}
+      `}
+      >
         <div className="catalog__filters">
           <div className="catalog__filters-block">
             <Categories
@@ -60,10 +62,10 @@ class Filters extends Component {
             <Price price={this.state.pricefilter} />
           </div>
           <div className="catalog__filters-block">
-            <Size size={this.state.size} />
+            <Checkboxes title="Sizes" list={this.state.sizes} />
           </div>
           <div className="catalog__filters-block">
-            <Brands brands={this.state.brands} />
+            <Checkboxes title="Brands" list={this.state.brands} />
           </div>
         </div>
       </div>
