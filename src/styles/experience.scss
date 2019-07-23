@@ -1,0 +1,19 @@
+@import './variables.scss';
+
+.experience {
+  display: grid;
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    & span {
+      color: $color-medium
+    }
+
+    & p {
+      color: $color-dark
+    }
+  }
+}

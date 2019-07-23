@@ -1,0 +1,31 @@
+.profile {
+  background: #42A8C0;
+  ;
+  box-sizing: border-box;
+  height: 100%;
+
+  &__user {
+    background: #2d7788;
+    text-align: center;
+  }
+
+  &__picture {
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    height: 10rem;
+    display: inline-block;
+  }
+
+  &__user-name {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+
+  &__user-rank {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+}

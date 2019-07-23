@@ -1,12 +1,19 @@
-import React from "react";
-import Banner from "./banner";
-import Content from "./content";
-
-const Main = () => (
-  <main className="main">
-    <Banner />
-    <Content />
-  </main>
-);
+import React, { Component } from 'react';
+import SectionOne from './about';
+import SectionTwo from './technologies';
+import SectionThree from './portfolio';
+import SectionFour from './experience'
+class Main extends Component {
+    render() {
+        return (
+            <main class="main">
+           <SectionOne/>
+            <SectionTwo />
+            <SectionThree/>
+            <SectionFour/>            
+        </main>
+        );
+    }
+}
 
 export default Main;
